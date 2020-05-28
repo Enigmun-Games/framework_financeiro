@@ -3,38 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
   <link rel="stylesheet" href="css/main.css">
   <script src="js/usuarios.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <title>Finanças Framework</title>
 </head>
 <body>
-  <div class="tudo">
-    <div class="login">
-            <div align="center">
-              <img src="img/download.jpg" alt="">
+ <section class="mainbg" style="background-image: url(Assets/bgmain.jpg);">
+    <div class="container">
+      <div class="row">
+        <div class="col m4"></div>
+        <div class="col m4">
+          <div class="formbox z-depth-4">
+            <br>
+            
+            <div class="input-field">
+              <i class="material-icons prefix">account_circle</i>
+              <label>Seu Usuário</label>
+              <input type="text" placeholder="Jorge" class="validate">
+            </div>
+            <br>
+            <div class="input-field">
+              <i class="material-icons prefix">locker</i>
+              <label>Sua Senha</label>
+            <input type="password" placeholder="*******" class="validate">
+            </div>
+            <br>
+            <div class="input-field center">
+              <a class="waves-effect waves-light btn-small orange black-text hover"><i class="material-icons left">build</i>Criar conta</a>
+              <a class="waves-effect waves-light btn-small "><i class="material-icons left">cloud</i>Entrar</a>
+            </div>
           </div>
-          <form action="">
-              <div class="form-group">
-                <label for="">Login</label>
-                <input type="email" class="form-control" id="email">
-              </div>
-              <div class="form-group">
-                <label for="">Senha</label>
-                <input type="password" class="form-control" id="senha">
-              </div>
-              <div>
-                <button type="button" class="btn btn-outline-success" onclick="logar()">Logar</button>
-                <a class="btn btn-outline-info" href="cadastroUsuario.html">Cadastrar</a>
-              </div>
-          </form>
-        </div>  
-    
-  </div>
+        </div>
+        <div class="col m4"></div>
+      </div>
+    </div>
+ </section>
+ <script type="text/javascript">
+  $('section').mousemove(function(e){
+      var moveX =(e.pageX * -1 / 100);
+      var moveY =(e.pageY * -1 / 100);
+      $(this).css('background-position', moveX + 'px ' + moveY + 'px ')
+  })
+  </script>
+   <script>
+    M.AutoInit();
+  document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('select');
+  var instances = M.FormSelect.init(elems, options);
+   });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 </body>
 </html>
