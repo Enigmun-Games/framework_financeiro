@@ -17,3 +17,10 @@ body{
   height: 350px;
   padding: 30px;
 }
+
+.formbox-cad{
+  background-color: rgba(255, 255, 255, 0.904) ;
+  margin-top:50%;
+  height: 650px;
+  padding: 30px;
+}
